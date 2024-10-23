@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <!-- Рядок дисплея -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@color/button_text_color"
+        android:textSize="32sp"
+        android:padding="16dp" />
+
+    <!-- Перший рядок (кнопка "C" і "/") -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/clear"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/divide"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+
+    <!-- Другий рядок з цифрами 7, 8, 9, і "*" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_seven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/seven"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_eight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/eight"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/nine"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/multiply"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+
+    <!-- Третій рядок з цифрами 4, 5, 6, і "-" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/four"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/five"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_six"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/six"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/subtract"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+
+    <!-- Четвертий рядок з цифрами 1, 2, 3, і "+" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/one"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/two"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/three"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/add"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+
+    <!-- П'ятий рядок з 0, ".", і "=" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_zero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/zero"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/dot"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@color/button_color"
+            android:text="@string/equals"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+
+</LinearLayout>
